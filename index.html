@@ -11,37 +11,43 @@
   <style>
     body {
       font-family: sans-serif;
-margin: 0 auto;
+      margin: 0;
+    }
+
+    /* ✅ 中央揃え用スタイル */
+    #bookWidget-136008-259760-0-1742904353 {
+      width: 500px;
+      margin: 0 auto;
+      display: block;
     }
   </style>
 </head>
 <body>
 
   <!-- ウィジェット表示エリア -->
- <div id='bookWidget-136008-259760-0-1742904353'> </div>
+  <div id="bookWidget-136008-259760-0-1742904353"></div>
 
   <!-- ウィジェット初期化スクリプト -->
   <script>
-jQuery(document).ready(function() {
-	jQuery('#bookWidget-136008-259760-0-1742904353').bookWidget({
-		propid:259760,
-		boxShadow:false,
-		buttonBackgroundColor:'#3e1f00',
-		buttonTitle:'空室検索',
-		dateSelection:1,
-		defaultNightsAdvance:0,
-		defaultNumNight:1,
-		formAction:'https://beds24.com/booking.php',
-		peopleSelection:0,
-		redirect:'https://jinen-takayama.com/ja/booking',
-		referer:'webサイト',
-		widgetLang:'ja',
-		widgetType:'BookingBoxMini',
-		width:'500px'
-	});
-});
-</script>
-
+    jQuery(document).ready(function () {
+      jQuery('#bookWidget-136008-259760-0-1742904353').bookWidget({
+        propid: 259760,
+        boxShadow: false,
+        buttonBackgroundColor: '#3e1f00',
+        buttonTitle: '空室検索',
+        dateSelection: 1,
+        defaultNightsAdvance: 0,
+        defaultNumNight: 1,
+        formAction: 'https://beds24.com/booking.php',
+        peopleSelection: 0,
+        redirect: 'https://jinen-takayama.com/ja/booking',
+        referer: 'webサイト',
+        widgetLang: 'ja',
+        widgetType: 'BookingBoxMini',
+        width: '500px'
+      });
+    });
+  </script>
 
 </body>
 </html>
