@@ -4,26 +4,28 @@
   <meta charset="UTF-8" />
   <title>Beds24 予約ウィジェット</title>
 
-  <!-- jQueryとウィジェットJS -->
+  <!-- jQueryとウィジェット用JSの読み込み -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src='https://media.xmlcal.com/widget/1.00/js/bookWidget.min.js'></script>
+  <script src="https://media.xmlcal.com/widget/1.00/js/bookWidget.min.js"></script>
 
   <style>
     body {
       margin: 2em;
       font-family: sans-serif;
+      display: flex;
+      justify-content: center;
     }
   </style>
 </head>
 <body>
 
-  <!-- ウィジェットの表示場所 -->
-  <div id='bookWidget-136008-259760-0-1742892300'></div>
+  <!-- ウィジェット表示エリア -->
+  <div id="bookWidget-136008-259760-0-1742892990"></div>
 
-  <!-- ウィジェットの初期化 -->
+  <!-- ウィジェット初期化スクリプト -->
   <script>
     jQuery(document).ready(function() {
-      jQuery('#bookWidget-136008-259760-0-1742892300').bookWidget({
+      jQuery('#bookWidget-136008-259760-0-1742892990').bookWidget({
         propid: 259760,
         boxShadow: false,
         buttonBackgroundColor: '#3e1f00',
