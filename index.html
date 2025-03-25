@@ -1,28 +1,46 @@
-<!-- bookingWidget requires jQuery and jQueryUI -->
-<!-- Include the following line ONCE ONLY on the page, preferably in the document head -->
-<script src="https://media.xmlcal.com/widget/1.00/js/bookWidget.min.js"></script>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>Beds24 予約ウィジェット</title>
 
-<!-- Place this div on your page where you want the widget to show -->
-<div id="bookWidget-136008-259760-0-1742892990"></div>
+  <!-- jQueryとウィジェットJS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src='https://media.xmlcal.com/widget/1.00/js/bookWidget.min.js'></script>
 
-<!-- The following will initialize the widget in the above div -->
-<script>
-  jQuery(document).ready(function () {
-    jQuery("#bookWidget-136008-259760-0-1742892990").bookWidget({
-      propid: 259760,
-      boxShadow: false,
-      buttonBackgroundColor: "#3e1f00",
-      buttonTitle: "空室検索",
-      dateSelection: 1,
-      defaultNightsAdvance: 0,
-      defaultNumNight: 1,
-      formAction: "https://beds24.com/booking.php",
-      peopleSelection: 0,
-      redirect: "https://jinen-takayama.com/ja/booking",
-      referer: "webサイト",
-      widgetLang: "ja",
-      widgetType: "BookingBoxMini",
-      width: "500px",
+  <style>
+    body {
+      margin: 2em;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ウィジェットの表示場所 -->
+  <div id='bookWidget-136008-259760-0-1742892300'></div>
+
+  <!-- ウィジェットの初期化 -->
+  <script>
+    jQuery(document).ready(function() {
+      jQuery('#bookWidget-136008-259760-0-1742892300').bookWidget({
+        propid: 259760,
+        boxShadow: false,
+        buttonBackgroundColor: '#3e1f00',
+        buttonTitle: '空室検索',
+        dateSelection: 1,
+        defaultNightsAdvance: 0,
+        defaultNumNight: 1,
+        formAction: 'https://beds24.com/booking.php',
+        peopleSelection: 0,
+        redirect: 'https://jinen-takayama.com/ja/booking',
+        referer: 'webサイト',
+        widgetLang: 'ja',
+        widgetType: 'BookingBoxMini',
+        width: '500px'
+      });
     });
-  });
-</script>
+  </script>
+
+</body>
+</html>
