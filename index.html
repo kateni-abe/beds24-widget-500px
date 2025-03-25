@@ -1,0 +1,28 @@
+<!-- bookingWidget requires jQuery and jQueryUI -->
+<!-- Include the following line ONCE ONLY on the page, preferably in the document head -->
+<script src="https://media.xmlcal.com/widget/1.00/js/bookWidget.min.js"></script>
+
+<!-- Place this div on your page where you want the widget to show -->
+<div id="bookWidget-136008-259760-0-1742892990"></div>
+
+<!-- The following will initialize the widget in the above div -->
+<script>
+  jQuery(document).ready(function () {
+    jQuery("#bookWidget-136008-259760-0-1742892990").bookWidget({
+      propid: 259760,
+      boxShadow: false,
+      buttonBackgroundColor: "#3e1f00",
+      buttonTitle: "空室検索",
+      dateSelection: 1,
+      defaultNightsAdvance: 0,
+      defaultNumNight: 1,
+      formAction: "https://beds24.com/booking.php",
+      peopleSelection: 0,
+      redirect: "https://jinen-takayama.com/ja/booking",
+      referer: "webサイト",
+      widgetLang: "ja",
+      widgetType: "BookingBoxMini",
+      width: "500px",
+    });
+  });
+</script>
